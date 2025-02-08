@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        header {
+            position: absolute;
+            width: 100%;
+            background-color: rgba(128,1, 1, 0.5);
+            padding: 20px;
+            text-align: center;
+            z-index: 10;
+        }
+        ul, li {
+            list-style-type: none;
+            display: inline;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        a:hover {
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay loop muted>
+        <source src="about us .mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <header>
+        <nav>
+            <ul>
+                <a href="home.html"><li>HOME</li></a>
+                <a href="aboutus.html"><li>ABOUT</li></a>
+                <a href="menu.html"><li>MENU</li></a>
+                <a href="https://paruluniversity.ac.in/contact-us"><li>CONTACT</li></a>
+                <a href="form.html"><li>APPLICATION FORM</li></a>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

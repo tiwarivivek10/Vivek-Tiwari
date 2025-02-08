@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        .sec{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            column-gap: 10px;
+            row-gap: 15px;
+            /*background-color: rgb(2, 5, 165);*/
+            padding: 20px;
+            
+            
+        }
+        .sec div{
+            height: 300px;
+            width: 200px;
+            background-color: black;
+            
+        }
+        body{
+            background-image: url(indexbg.avif);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .burg{
+            background-image: url(burger.jpg);
+            background-size:contain;
+            width: max-content;
+            border: 2px solid;
+            border-color: bisque;
+            
+            
+        }
+        .but{
+            background-image: url(Screenshot\ 2025-02-07\ at\ 11.35.07\ AM.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 2px solid;
+            border-color: bisque;
+        }
+        .sod{
+            background-image: url(soda\ ss.png);
+            background-size: cover;
+            border: 2px solid;
+            border-color: bisque;
+            
+        }
+        .piz{
+            background-image: url(DeWatermark.ai_1738908861916.png);
+            background-size: cover;
+            border: 2px solid;
+            border-color: bisque;
+        }
+        .san{
+            background-image: url(sandwich.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 2px solid;
+            border-color: bisque;
+        }
+        .bev{
+            background-image: url(beverages\ .avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 2px solid;
+            border-color: bisque;
+        }
+        .cak{
+            background-image: url(cake\ p.jpg);
+            background-repeat: no-repeat;
+            background-size : cover;
+            border: 2px solid;
+            border-color: bisque;
+        }
+        .mom{
+            background-image: url(momos.jpg);
+            background-repeat: no-repeat;
+            background-size : cover;
+            border: 2px solid;
+            border-color: bisque;
+        }
+        ul li{
+            color: whitesmoke;
+            text-align: left;
+            
+        }
+        .burg:hover{
+            transform: scale(0.8);
+            transition-delay: 0.3s;
+            transition: 1s ease-out;
+            border-radius: 25%;
+        }
+        .but:hover{
+            transform: scale(0.8);
+            transition-delay: 0.3s;
+            transition: 1s ease-out;
+            border-radius: 25%;
+        }
+        .sod:hover{
+            transform: scale(0.8);
+            transition-delay: 0.3s;
+            transition: 1s ease-out;
+            border-radius: 25%;
+        }
+        .piz:hover{
+            transform: scale(0.8);
+            transition-delay: 0.3s;
+            transition: 1s ease-out;
+            border-radius: 25%;
+        }
+        .san:hover{
+            transform: scale(0.8);
+            transition-delay: 0.3s;
+            transition: 1s ease-out;
+            border-radius: 25%;
+        }
+        .bev:hover{
+            transform: scale(0.8);
+            transition-delay: 0.3s;
+            transition: 1s ease-out;
+            border-radius: 25%;
+        }
+        .cak:hover{
+            transform: scale(0.8);
+            transition-delay: 0.3s;
+            transition: 1s ease-out;
+            border-radius: 25%;
+        }
+        .mom:hover{
+            transform: scale(0.8);
+            transition-delay: 0.3s;
+            transition: 1s ease-in-out;
+            border-radius: 25%;
+        }
+        header{
+            background-color: rgba(203, 70, 181,0.5);
+            padding: 20px;
+            text-align: center;
+            
+        }
+        #navb ul{
+            list-style-type: none;
+            display: inline;
+            color: rgb(255, 255, 255);
+            padding: 25px;
+            text-align: center;
+            
+            
+
+        }
+        div{
+            background-color: aqua;
+            width: 500px;
+            height: 500px;
+
+        }
+        @media( max-width : 300px)
+        {
+            div{
+                background-color: black;
+                padding: 20%;
+                color: whitesmoke;
+                font-family: fantasy;
+                font-size: 50px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!--<header>
+        <nav>
+            <ul id="navb"></ul>
+                <a href="https://paruluniversity.ac.in/"><li>HOME</li></a>
+                <a href="https://paruluniversity.ac.in/who-we-are"><li>ABOUT</li></a>
+               <a href="https://paruluniversity.ac.in/academic-overview"><li>SERVICES</li></a>
+                <a href="https://paruluniversity.ac.in/contact-us"><li>CONTACT</li></a>
+                <a href="form.html"><li>APPLICATION FORM</li></a>
+            </ul>
+        </nav>
+    </header>-->
+    <section class="sec">
+        <div class="burg"style="color: white; text-align:center;">Burger</div>
+        <h2 style="color:whitesmoke; font-style: italic; font-family: cursive;">Burger <ul>
+            <li>Spicy Veg</li>
+            <li>Cheesy Veg</li>
+            <li>Mayoneese Veg</li>
+            <li>Chicken Burger</li>
+            <button style="color: black ; font-family: 'Times New Roman', Times, serif;">Order Now</button>
+        </ul></h2>
+        
+        <div  class="but" style="color: white; text-align: center;">Butter</div>
+        <h2 style="color: whitesmoke; font-style: italic; font-family: cursive;">Butter<ul>
+            <li>Beurre blanc</li>
+            <li>Beurre fondue </li>
+            <li>Beurre Maître d'Hôtel </li>
+            <li>Chicken Burger</li>
+            <button style="color: black ; font-family: 'Times New Roman', Times, serif;">Order Now</button>
+        </ul></h2>
+        <div  class="sod" style="color: white; text-align: center;">Soda</div>
+        <h2 style="color: whitesmoke; font-style: italic; font-family: cursive;">Soda <ul>
+            <li>Lime soda</li>
+            <li>Blue Mojito</li>
+            <li>Green Beer </li>
+            <li>Mocktails</li>
+            <button style="color: black ; font-family: 'Times New Roman', Times, serif;">Order Now</button>
+        </ul></h2>
+        <div class="piz" style="color: white; text-align: center;">Pizza</div>
+        <h2 style="color: whitesmoke; font-style: italic; font-family: cursive;">Pizza<ul>
+            <li>Chicago Deep-Dish Pizza.</li>
+            <li>Margherita Pizza</li>
+            <li>Sicilian Pizza </li>
+            <li>Hawaiian Pizza</li>
+            <button style="color: black ; font-family: 'Times New Roman', Times, serif;">Order Now</button>
+        </ul></h2>
+        <div  class="san" style="color: white; text-align: center;">Sandwich</div>
+        <h2 style="color: whitesmoke; font-style: italic; font-family: cursive;">Sandwich<ul>
+            <li>Grilled cheese</li>
+            <li>Cuban sandwich</li>
+            <li>Caprese salad </li>
+            <li>Chicken sandwich</li>
+            <button style="color: black ; font-family: 'Times New Roman', Times, serif;">Order Now</button>
+        </ul></h2>
+        
+        <div  class="bev" style="color: white; text-align: center;"> Beverages</div>
+        <h2 style="color: whitesmoke; font-style: italic; font-family: cursive;">Beverages<ul>
+            <li>Black tea</li>
+            <li>Espresso</li>
+            <li>Caffe latte</li>
+            <li>Irish coffee</li>
+            <button style="color: black ; font-family: 'Times New Roman', Times, serif;">Order Now</button>
+        </ul></h2>
+        
+        <div  class="cak" style="color: white; text-align: center;"> Cakes</div>
+        <h2 style="color: whitesmoke; font-style: italic; font-family: cursive;">Cakes<ul>
+            <li>Red velvet cake</li>
+            <li>Black Forest cake</li>
+            <li>Strawberry cake/li>
+            <li>Chocolate cake</li>
+            <button style="color: black ; font-family: 'Times New Roman', Times, serif;">Order Now</button>
+        </ul></h2>
+
+        <div  class="mom" style="color: white; text-align: center;">Momos</div>
+        <h2 style="color: whitesmoke; font-style: italic; font-family: cursive;">Momos<ul>
+            <li>Paneer momos</li>
+            <li> Cheese momos</li>
+            <li>Fried momos/li>
+            <li>Steamed momos</li>
+            <button style="color: black ; font-family: 'Times New Roman', Times, serif;">Order Now</button>
+        </ul></h2>
+
+    </section>
+</body>
+</html>
