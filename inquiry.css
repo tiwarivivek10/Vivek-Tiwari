@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+.portfolio-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.navlist {
+    display: flex;
+    gap: 3.5rem;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.navlist li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.navlist li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.navlist li a:hover {
+    background: transparent;
+    color: skyblue;
+
+}
+
+a , a:active {
+        text-decoration: none;
+        color: white;
+        position: relative;
+
+        &.active {
+            font-weight: 600;
+            padding: 0.25rem 0.5rem;
+            color: var(--text);
+            border-radius: 8px;
+            background-color: #67ccff;
+
+            &::after {
+                display: none;
+            }
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            width: 0;
+            background-color: white;
+            transform: scaleX(0);
+            transition: transform 0.5s;
+        }
+
+        &:hover::after {
+            transform: scaleX(1);
+            width: 100%;
+        }
+    }
+
+
+.left-container,
+.right-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.left-container {
+    background: #262525;
+    width: 70%;
+    padding-left: 3rem;
+
+    .icons {
+        a {
+            text-decoration: none;
+            &:hover::after {
+                display: none;
+            }
+        }
+    }
+}
+
+.right-container {
+    background: linear-gradient(-45deg, #3877ff, #262525 70%);
+    width: 30%;
+}
+
+.icons .fa-brands {
+    color: #bbb;
+    font-size: 1.7rem;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.content {
+    margin-left: 4rem;
+
+}
+
+.content .intro {
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 2.5rem;
+}
+
+.content .intro span {
+    color: #5db9ee;
+}
+
+.content h1 {
+    font-size: 4rem;
+    color: #5db9ee;
+}
+
+.content .detail {
+    font-size: 1.1rem;
+    color: #fff;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+}
+
+.content .languages {
+    font-size: 1.1rem;
+    color: #fff;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+    margin-left: 1rem;
+
+    li {
+        list-style: none;
+        background-color: rgba(255, 255, 255, 0.10);
+        padding: 0.75rem;
+        border-radius: 8px;
+        transition: 0.5s ease transform;
+
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+}
+
+.icons .fa-brands:hover {
+    cursor: pointer;
+    background: linear-gradient(#fff, #3877ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.design .circle {
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+
+}
+
+.circle:nth-child(1) {
+    background: linear-gradient(90deg, transparent 50%, #262525 50%);
+    width: 38rem;
+}
+
+.circle:nth-child(2) {
+    width: 30rem;
+    background-image: url("Screenshot\ 2024-12-11\ at\ 4.43.12\ PM.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 0.1rem solid #fff;
+    box-shadow: 0 0 1rem #fff, inset 0 0 1rem #fff, 0 0 2rem #3877ff, inset 0 0 2rem #3877ff, 0 0 4rem #3877ff, inset 0 0 4rem #3877ff;
+}
+
+footer {
+    background: #6f9196;
+    padding: 1rem;
+    text-align: center;
+    color: rgb(231, 231, 231);
+    font-weight: 500;
+
+    p {
+        a {
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        span {
+            color: rgb(255, 134, 134);
+            font-size: 20px;
+        }
+    }
+}
+
+.content {
+    
+    padding: 2rem;
+}
+.name {
+    
+    justify-content: space-between;
+    
+}
+    
+
+.content .button {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    background-color: #3877ff;
+    padding-left: 2rem; 
+    padding: 0.5rem; 
+    border-radius: 8px;
+    color: #fff;
+    
+    
+    
+    
+    
+}
+.button:hover {
+    background: transparent;
+    color: skyblue;
+    
+    
+    
+}
+.inquiry-form {
+    background-color: rgba(255, 255, 255, 0.10);
+    padding: 1.5rem;
+    border-radius: 12px;
+    button {
+        a:hover::after {
+            display: none;
+        }
+    }
+}
